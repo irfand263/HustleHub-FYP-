@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".HeavyFoods">
+
+    <GridLayout
+        android:id="@+id/specialistGrid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alignmentMode="alignMargins"
+        android:columnCount="1"
+        android:columnOrderPreserved="false"
+        android:padding="16dp"
+        android:rowCount="3"
+        android:useDefaultMargins="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.397">
+
+        <!-- Heavy Foods Specialist 1 -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Image for Heavy Foods Specialist 1 -->
+            <ImageView
+                android:id="@+id/heavyFoodsSpecialist1Image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/heavymale"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- Heavy Foods Specialist 1 Info -->
+            <TextView
+                android:id="@+id/heavyFoodsSpecialist1Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Muhammad Ali "
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@+id/heavyFoodsSpecialist1Gender"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintStart_toEndOf="@+id/heavyFoodsSpecialist1Image"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.45" />
+
+            <TextView
+                android:id="@+id/heavyFoodsSpecialist1Gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Male"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@id/heavyFoodsSpecialist1Name"
+                app:layout_constraintTop_toBottomOf="@id/heavyFoodsSpecialist1Name" />
+
+            <TextView
+                android:id="@+id/heavyFoodsSpecialist1Area"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Grill Master"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@id/heavyFoodsSpecialist1Name"
+                app:layout_constraintTop_toBottomOf="@id/heavyFoodsSpecialist1Gender" />
+
+            <TextView
+                android:id="@+id/heavyFoodsSpecialist1Perks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Expert in BBQ, Delicious recipes"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@id/heavyFoodsSpecialist1Name"
+                app:layout_constraintTop_toBottomOf="@id/heavyFoodsSpecialist1Area" />
+
+            <Button
+                android:id="@+id/bookNowButtonHeavyFoods1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#2196F3"
+                android:text="Book Now"
+                android:textColor="#100F0F"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/heavyFoodsSpecialist1Perks" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- Heavy Foods Specialist 2 -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Image for Heavy Foods Specialist 2 -->
+            <ImageView
+                android:id="@+id/heavyFoodsSpecialist2Image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/heavyfemale"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- Heavy Foods Specialist 2 Info -->
+            <TextView
+                android:id="@+id/heavyFoodsSpecialist2Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wan Azyra"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@+id/heavyFoodsSpecialist2Gender"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintStart_toEndOf="@+id/heavyFoodsSpecialist2Image"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.45" />
+
+            <TextView
+                android:id="@+id/heavyFoodsSpecialist2Gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Female"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@id/heavyFoodsSpecialist2Name"
+                app:layout_constraintTop_toBottomOf="@id/heavyFoodsSpecialist2Name" />
+
+            <TextView
+                android:id="@+id/heavyFoodsSpecialist2Area"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Dessert Specialist"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@id/heavyFoodsSpecialist2Name"
+                app:layout_constraintTop_toBottomOf="@id/heavyFoodsSpecialist2Gender" />
+
+            <TextView
+                android:id="@+id/heavyFoodsSpecialist2Perks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Creative pastry recipes, Quality desserts"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@id/heavyFoodsSpecialist2Name"
+                app:layout_constraintTop_toBottomOf="@id/heavyFoodsSpecialist2Area" />
+
+            <Button
+                android:id="@+id/bookNowButtonHeavyFoods2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#2196F3"
+                android:text="Book Now"
+                android:textColor="#100F0F"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/heavyFoodsSpecialist2Perks" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <!-- Heavy Foods Specialist 3 -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Image for Heavy Foods Specialist 3 -->
+            <ImageView
+                android:id="@+id/heavyFoodsSpecialist3Image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/heavymale"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- Heavy Foods Specialist 3 Info -->
+            <TextView
+                android:id="@+id/heavyFoodsSpecialist3Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nor Juhairi "
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@+id/heavyFoodsSpecialist3Gender"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintStart_toEndOf="@+id/heavyFoodsSpecialist3Image"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.45" />
+
+            <TextView
+                android:id="@+id/heavyFoodsSpecialist3Gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Male"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@id/heavyFoodsSpecialist3Name"
+                app:layout_constraintTop_toBottomOf="@id/heavyFoodsSpecialist3Name" />
+
+            <TextView
+                android:id="@+id/heavyFoodsSpecialist3Area"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Grill Expert"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@id/heavyFoodsSpecialist3Name"
+                app:layout_constraintTop_toBottomOf="@id/heavyFoodsSpecialist3Gender" />
+
+            <TextView
+                android:id="@+id/heavyFoodsSpecialist3Perks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Master of BBQ, Unique recipes"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@id/heavyFoodsSpecialist3Name"
+                app:layout_constraintTop_toBottomOf="@id/heavyFoodsSpecialist3Area" />
+
+            <Button
+                android:id="@+id/bookNowButtonHeavyFoods3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#2196F3"
+                android:text="Book Now"
+                android:textColor="#100F0F"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/heavyFoodsSpecialist3Perks" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </GridLayout>
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:background="#2196F3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023"
+        app:srcCompat="@drawable/baseline_arrow_back_24" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="258dp"
+        android:layout_height="44dp"
+        android:text="Heavy Food Specialists"
+        android:textAlignment="center"
+        android:textColor="#2196F3"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/specialistGrid"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.083"
+        app:layout_constraintStart_toEndOf="@+id/btnBack"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

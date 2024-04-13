@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.HustleHubs"
+        tools:targetApi="31">
+        <activity
+            android:name=".Booking"
+            android:exported="false" />
+        <activity
+            android:name=".Hustlers"
+            android:exported="false" />
+        <activity
+            android:name=".EditAccount"
+            android:exported="false" />
+        <activity
+            android:name=".HeavyFoods"
+            android:exported="false" />
+        <activity
+            android:name=".Technician"
+            android:exported="false" />
+        <activity
+            android:name=".TraditionalMades"
+            android:exported="false" />
+        <activity
+            android:name=".Cleaning"
+            android:exported="false" />
+        <activity
+            android:name=".CarRepair"
+            android:exported="false" />
+        <activity
+            android:name=".Help"
+            android:exported="false" />
+        <activity
+            android:name=".Services"
+            android:exported="false" />
+        <activity
+            android:name=".Account"
+            android:exported="false" />
+        <activity
+            android:name=".Home"
+            android:exported="false" />
+        <activity
+            android:name=".Register"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

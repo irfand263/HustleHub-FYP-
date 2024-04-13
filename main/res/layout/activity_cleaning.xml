@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Cleaning">
+
+    <GridLayout
+        android:id="@+id/specialistGrid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alignmentMode="alignMargins"
+        android:columnCount="1"
+        android:columnOrderPreserved="false"
+        android:padding="16dp"
+        android:rowCount="3"
+        android:useDefaultMargins="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.397">
+
+        <!-- Cleaning Specialist 1 -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Image for Cleaning Specialist 1 -->
+            <ImageView
+                android:id="@+id/cleaningSpecialist1Image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/cleaningfemale"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- Cleaning Specialist 1 Info -->
+            <TextView
+                android:id="@+id/cleaningSpecialist1Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Amanda Sofia"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@+id/cleaningSpecialist1Gender"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintStart_toEndOf="@+id/cleaningSpecialist1Image"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.45" />
+
+            <TextView
+                android:id="@+id/cleaningSpecialist1Gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Female"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@id/cleaningSpecialist1Name"
+                app:layout_constraintTop_toBottomOf="@id/cleaningSpecialist1Name" />
+
+            <TextView
+                android:id="@+id/cleaningSpecialist1Area"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Deep Cleaning"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@id/cleaningSpecialist1Name"
+                app:layout_constraintTop_toBottomOf="@id/cleaningSpecialist1Gender" />
+
+            <TextView
+                android:id="@+id/cleaningSpecialist1Perks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Eco-friendly products, Attention to detail"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@id/cleaningSpecialist1Name"
+                app:layout_constraintTop_toBottomOf="@id/cleaningSpecialist1Area" />
+
+            <Button
+                android:id="@+id/bookNowButtonCleaning1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#2196F3"
+                android:text="Book Now"
+                android:textColor="#100F0F"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cleaningSpecialist1Perks" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- Specialist 2 for Cleaning -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Image for Specialist 2 -->
+            <ImageView
+                android:id="@+id/cleaningSpecialist2Image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/cleaningfemale"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- Specialist 2 Info -->
+            <TextView
+                android:id="@+id/cleaningSpecialist2Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sarah Suria"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@+id/cleaningSpecialist2Gender"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintStart_toEndOf="@+id/cleaningSpecialist2Image"
+                app:layout_constraintTop_toTopOf="@id/cleaningSpecialist2Image" />
+
+            <TextView
+                android:id="@+id/cleaningSpecialist2Gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Female"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@id/cleaningSpecialist2Name"
+                app:layout_constraintTop_toBottomOf="@id/cleaningSpecialist2Name" />
+
+            <TextView
+                android:id="@+id/cleaningSpecialist2Area"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Window Cleaning"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@id/cleaningSpecialist2Name"
+                app:layout_constraintTop_toBottomOf="@id/cleaningSpecialist2Gender" />
+
+            <TextView
+                android:id="@+id/cleaningSpecialist2Perks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Eco-friendly products, Spotless results"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@id/cleaningSpecialist2Name"
+                app:layout_constraintTop_toBottomOf="@id/cleaningSpecialist2Area" />
+
+            <Button
+                android:id="@+id/bookNowButtonCleaning2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#2196F3"
+                android:text="Book Now"
+                android:textColor="#100F0F"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cleaningSpecialist2Perks" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <!-- Specialist 3 for Cleaning -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Image for Specialist 3 -->
+            <ImageView
+                android:id="@+id/cleaningSpecialist3Image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/cleaningfemale"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- Specialist 3 Info -->
+            <TextView
+                android:id="@+id/cleaningSpecialist3Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mawar Puteh"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@+id/cleaningSpecialist3Gender"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintStart_toEndOf="@+id/cleaningSpecialist3Image"
+                app:layout_constraintTop_toTopOf="@id/cleaningSpecialist3Image" />
+
+            <TextView
+                android:id="@+id/cleaningSpecialist3Gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Female"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@id/cleaningSpecialist3Name"
+                app:layout_constraintTop_toBottomOf="@id/cleaningSpecialist3Name" />
+
+            <TextView
+                android:id="@+id/cleaningSpecialist3Area"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Carpet Cleaning"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@id/cleaningSpecialist3Name"
+                app:layout_constraintTop_toBottomOf="@id/cleaningSpecialist3Gender" />
+
+            <TextView
+                android:id="@+id/cleaningSpecialist3Perks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Professional equipment, Quick service"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@id/cleaningSpecialist3Name"
+                app:layout_constraintTop_toBottomOf="@id/cleaningSpecialist3Area" />
+
+            <Button
+                android:id="@+id/bookNowButtonCleaning3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#2196F3"
+                android:text="Book Now"
+                android:textColor="#100F0F"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cleaningSpecialist3Perks" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </GridLayout>
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:background="#2196F3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023"
+        app:srcCompat="@drawable/baseline_arrow_back_24" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="253dp"
+        android:layout_height="41dp"
+        android:text="Cleaning Specialists"
+        android:textAlignment="center"
+        android:textColor="#2196F3"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

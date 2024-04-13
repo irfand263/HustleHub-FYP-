@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="gender_array">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="payment_array">
+        <item>Online Banking</item>
+        <item>E-Wallet</item>
+    </string-array>
+
+    <string-array name="services_array">
+        <item>Car Repair</item>
+        <item>Cleaning</item>
+        <item>Technician</item>
+        <item>Traditional Maids</item>
+        <item>Heavy Foods</item>
+    </string-array>
+
+    <string-array name="area_array">
+        <item>Taman Connaught</item>
+        <item>Bandar Mahkota Cheras</item>
+        <item>Taman Segar</item>
+        <item>Batu 9 Cheras</item>
+        <item>Alam Damai</item>
+    </string-array>
+    
+    <string-array name="services_specialist_array">
+        <item>Abdul Salleh (Engine Repair)</item>
+        <item>Siti Masinah (Electrical Repair) </item>
+        <item>Badrol Samad (Bodywork Repair)</item>
+        <item>Amanda Sofia (Deep Cleaning)</item>
+        <item>Sarah Suria (Window Cleaning)</item>
+        <item>Mawar Puteh (Carpet Cleaning)</item>
+        <item>Ahmad Kassim (Electronics Repair)</item>
+        <item>Nur Adilah (Appliance Repair)</item>
+        <item>Jamal Hussein (HVAC Repair)</item>
+        <item>Siti Zara (Kuih Making)</item>
+        <item>Ahmad Andika (Putu Piring)</item>
+        <item>Suri Kamelia (Lemang and Ketupat)</item>
+        <item>Muhammad Ali  (Grill Master)</item>
+        <item>Wan Azyra (Dessert Specialist)</item>
+        <item>Nor Juhairi (Grill Expert)</item>
+    </string-array>
+
+</resources>

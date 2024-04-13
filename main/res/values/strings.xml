@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">HustleHubs</string>
+
+    <string name="step_description">First, after register and login, clicked image Hustlers.<br /><br />
+        Second, fill in the form.<br /><br />
+        Third, press Submit, then wait until the admin contact you and approved it.<br /><br />
+        Lastly, users became Hustlers.</string>
+
+    <string name="step_services">First, after register and login, clicked image Services.<br /><br />
+        Second, choose your services (ex. Car repair, Cleaning, Technician, Traditional Mades or Heavy Foods).
+        Third, Choose your specialist and press book now button.<br /><br />
+        Fourth, fill in the hustlers form and submit. Lastly, make a payment of RM30 as our charges to book
+        your specialists and wait until the specialist contact you via email or by phone number.</string>
+
+    <string name="terms_and_conditions">
+        First, the user need to be register and login for using this app. Second, the user that want to be
+        Hustlers need to agree with this:- Hustlers will 70/100 and the apps will get 30/100 of overall
+        payment that have been collected by the client. Hustlers also have to communicate with the client and
+        the admin about the whole process of the services. Every payment between the client and Hustlers
+        need to have a proof (ex. screenshot of online transaction and others..).The payment will only being made
+        by online transaction (ex. online banking or e-wallet). The range of this app will only take the Hustlers
+        in Cheras Community.Hustlers must have their own transportation to go to the client area.
+    </string>
+</resources>

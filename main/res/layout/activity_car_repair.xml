@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".CarRepair">
+
+    <GridLayout
+        android:id="@+id/specialistGrid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alignmentMode="alignMargins"
+        android:columnCount="1"
+        android:columnOrderPreserved="false"
+        android:padding="16dp"
+        android:rowCount="3"
+        android:useDefaultMargins="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.397">
+
+        <!-- Specialist 1 -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Image for Specialist 1 -->
+            <ImageView
+                android:id="@+id/specialist1Image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/carmale"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- Specialist 1 Info -->
+            <TextView
+                android:id="@+id/specialist1Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Abdul Salleh"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@+id/specialist1Gender"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintStart_toEndOf="@+id/specialist1Image"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.45" />
+
+            <TextView
+                android:id="@+id/specialist1Gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Male"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@id/specialist1Name"
+                app:layout_constraintTop_toBottomOf="@id/specialist1Name" />
+
+            <TextView
+                android:id="@+id/specialist1Area"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Engine Repair"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@id/specialist1Name"
+                app:layout_constraintTop_toBottomOf="@id/specialist1Gender" />
+
+            <TextView
+                android:id="@+id/specialist1Perks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Fast service, Experienced"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@id/specialist1Name"
+                app:layout_constraintTop_toBottomOf="@id/specialist1Area" />
+
+            <Button
+                android:id="@+id/bookNowButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#2196F3"
+                android:text="Book Now"
+                android:textColor="#100F0F"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/specialist1Perks" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <!-- Specialist 2 -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Image for Specialist 2 -->
+            <ImageView
+                android:id="@+id/specialist2Image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/carrepairfemale"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- Specialist 2 Info -->
+            <TextView
+                android:id="@+id/specialist2Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Siti Masinah "
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@+id/specialist2Gender"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintStart_toEndOf="@+id/specialist2Image"
+                app:layout_constraintTop_toTopOf="@id/specialist2Image" />
+
+            <TextView
+                android:id="@+id/specialist2Gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Female"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@id/specialist2Name"
+                app:layout_constraintTop_toBottomOf="@id/specialist2Name" />
+
+            <TextView
+                android:id="@+id/specialist2Area"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Electrical Repair"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@id/specialist2Name"
+                app:layout_constraintTop_toBottomOf="@id/specialist2Gender" />
+
+            <TextView
+                android:id="@+id/specialist2Perks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Great knowledge in Cars"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@id/specialist2Name"
+                app:layout_constraintTop_toBottomOf="@id/specialist2Area" />
+
+            <Button
+                android:id="@+id/bookNowButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#2196F3"
+                android:text="Book Now"
+                android:textColor="#100F0F"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/specialist2Perks" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <!-- Specialist 3 -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Image for Specialist 3 -->
+            <ImageView
+                android:id="@+id/specialist3Image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/carmale"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- Specialist 3 Info -->
+            <TextView
+                android:id="@+id/specialist3Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Badrol Samad"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@+id/specialist3Gender"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintStart_toEndOf="@+id/specialist3Image"
+                app:layout_constraintTop_toTopOf="@id/specialist3Image" />
+
+            <TextView
+                android:id="@+id/specialist3Gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Male"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@id/specialist3Name"
+                app:layout_constraintTop_toBottomOf="@id/specialist3Name" />
+
+            <TextView
+                android:id="@+id/specialist3Area"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Bodywork Repair"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@id/specialist3Name"
+                app:layout_constraintTop_toBottomOf="@id/specialist3Gender" />
+
+            <TextView
+                android:id="@+id/specialist3Perks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Precision work, Quality assurance"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@id/specialist3Name"
+                app:layout_constraintTop_toBottomOf="@id/specialist3Area" />
+
+            <Button
+                android:id="@+id/bookNowButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#2196F3"
+                android:text="Book Now"
+                android:textColor="#100F0F"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/specialist3Perks" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </GridLayout>
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:background="#2196F3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023"
+        app:srcCompat="@drawable/baseline_arrow_back_24" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="279dp"
+        android:layout_height="42dp"
+        android:text="Car Repair Specialists"
+        android:textColor="#2196F3"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.719"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

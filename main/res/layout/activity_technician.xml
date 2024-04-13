@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#131212"
+    tools:context=".Technician">
+
+    <GridLayout
+        android:id="@+id/specialistGrid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alignmentMode="alignMargins"
+        android:columnCount="1"
+        android:columnOrderPreserved="false"
+        android:padding="16dp"
+        android:rowCount="3"
+        android:useDefaultMargins="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.559">
+
+        <!-- Technician Specialist 1 -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Image for Technician Specialist 1 -->
+            <ImageView
+                android:id="@+id/technicianSpecialist1Image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/technicianmale"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- Technician Specialist 1 Info -->
+            <TextView
+                android:id="@+id/technicianSpecialist1Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ahmad Kassim"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@+id/technicianSpecialist1Gender"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintStart_toEndOf="@+id/technicianSpecialist1Image"
+                app:layout_constraintTop_toTopOf="@id/technicianSpecialist1Image" />
+
+            <TextView
+                android:id="@+id/technicianSpecialist1Gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Male"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@id/technicianSpecialist1Name"
+                app:layout_constraintTop_toBottomOf="@id/technicianSpecialist1Name" />
+
+            <TextView
+                android:id="@+id/technicianSpecialist1Area"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Electronics Repair"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@id/technicianSpecialist1Name"
+                app:layout_constraintTop_toBottomOf="@id/technicianSpecialist1Gender" />
+
+            <TextView
+                android:id="@+id/technicianSpecialist1Perks"
+                android:layout_width="281dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:text="Specializes in circuit boards, Quick diagnostics"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@id/technicianSpecialist1Name"
+                app:layout_constraintTop_toBottomOf="@id/technicianSpecialist1Area" />
+
+            <Button
+                android:id="@+id/bookNowButtonTechnician1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#2196F3"
+                android:text="Book Now"
+                android:textColor="#100F0F"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/technicianSpecialist1Perks" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- Technician Specialist 2 -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Image for Technician Specialist 2 -->
+            <ImageView
+                android:id="@+id/technicianSpecialist2Image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/technicianfemale"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- Technician Specialist 2 Info -->
+            <TextView
+                android:id="@+id/technicianSpecialist2Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nur Adilah"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@+id/technicianSpecialist2Gender"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintStart_toEndOf="@+id/technicianSpecialist2Image"
+                app:layout_constraintTop_toTopOf="@id/technicianSpecialist2Image" />
+
+            <TextView
+                android:id="@+id/technicianSpecialist2Gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Female"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@id/technicianSpecialist2Name"
+                app:layout_constraintTop_toBottomOf="@id/technicianSpecialist2Name" />
+
+            <TextView
+                android:id="@+id/technicianSpecialist2Area"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Appliance Repair"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@id/technicianSpecialist2Name"
+                app:layout_constraintTop_toBottomOf="@id/technicianSpecialist2Gender" />
+
+            <TextView
+                android:id="@+id/technicianSpecialist2Perks"
+                android:layout_width="253dp"
+                android:layout_height="29dp"
+                android:layout_marginTop="8dp"
+                android:text="Expert in kitchen appliances, Reliable service"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@id/technicianSpecialist2Name"
+                app:layout_constraintTop_toBottomOf="@id/technicianSpecialist2Area" />
+
+            <Button
+                android:id="@+id/bookNowButtonTechnician2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#2196F3"
+                android:text="Book Now"
+                android:textColor="#100F0F"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/technicianSpecialist2Perks" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- Technician Specialist 3 -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Image for Technician Specialist 3 -->
+            <ImageView
+                android:id="@+id/technicianSpecialist3Image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/technicianmale"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- Technician Specialist 3 Info -->
+            <TextView
+                android:id="@+id/technicianSpecialist3Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jamal Hussein"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@+id/technicianSpecialist3Gender"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintStart_toEndOf="@+id/technicianSpecialist3Image"
+                app:layout_constraintTop_toTopOf="@id/technicianSpecialist3Image" />
+
+            <TextView
+                android:id="@+id/technicianSpecialist3Gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Male"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@id/technicianSpecialist3Name"
+                app:layout_constraintTop_toBottomOf="@id/technicianSpecialist3Name" />
+
+            <TextView
+                android:id="@+id/technicianSpecialist3Area"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="HVAC Repair"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@id/technicianSpecialist3Name"
+                app:layout_constraintTop_toBottomOf="@id/technicianSpecialist3Gender" />
+
+            <TextView
+                android:id="@+id/technicianSpecialist3Perks"
+                android:layout_width="267dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="8dp"
+                android:text="Heating, ventilation, and air conditioning services"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@id/technicianSpecialist3Name"
+                app:layout_constraintTop_toBottomOf="@id/technicianSpecialist3Area" />
+
+            <Button
+                android:id="@+id/bookNowButtonTechnician3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#2196F3"
+                android:text="Book Now"
+                android:textColor="#100F0F"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/technicianSpecialist3Perks" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </GridLayout>
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:background="#2196F3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023"
+        app:srcCompat="@drawable/baseline_arrow_back_24" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="255dp"
+        android:layout_height="47dp"
+        android:text="Technician Specialists"
+        android:textAlignment="center"
+        android:textColor="#2196F3"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.634"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
